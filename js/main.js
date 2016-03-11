@@ -1,26 +1,23 @@
 var $header = $('header');
 var $h1 = $('h1');
 var $main = $('main');
-var $p = $('p');
+var $p = $('main p:first-child');
 var $h2 = $('h2');
+var $ul = $('main ul');
 var $img = $('img');
+var $liFirst = $('ul li:first-child');
+var $liLast = $('ul li:last-child');
 var $dl = $('dl');
 var $dt = $('dt');
 
 $header.addClass('masthead');
-$h1.addClass('logo').remove('big-heading');
+$h1.addClass('logo').removeClass('big-heading');
 $main.addClass('wrapper');
-
-** $p.addClass('intro');
-
-
+$p.addClass('intro');
 $h2.addClass('slug-head');
-
-** main.forEach(function (li){
-  var $li = $
-})
-
+$ul.addClass('slug-list');
 $img.addClass('slug-img');
-
+$liFirst.addClass('slug-list-first');
+$liLast.addClass('slug-list-last').show();
 $dl.addClass('classification');
-$dt.remove('big-label');
+$dt.removeClass('big-label');
